@@ -25,6 +25,6 @@ coverage/
 .DS_Store
 Thumbs.db
 
-# npm lockfiles (wir nutzen pnpm)
+# npm lockfiles (wir nutzen pnpm – also KEIN package-lock.json)
 package-lock.json
 **/package-lock.json
