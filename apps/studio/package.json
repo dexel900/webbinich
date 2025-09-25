@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "latest"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

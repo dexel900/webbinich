@@ -1,0 +1,12 @@
+{
+  "name": "webbinich",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "pnpm --filter ./apps/website dev",
+    "dev:studio": "pnpm --filter ./apps/studio dev",
+    "dev:all": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  }
+}
