@@ -1,15 +1,33 @@
-﻿node_modules/
+﻿@"
+# node / monorepo
+node_modules/
 **/node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# builds & caches
 .next/
 **/.next/
 dist/
 build/
 out/
 coverage/
-*.log
+.turbo/
+.cache/
+.eslintcache
+
+# env & secrets
 .env
+.env.local
 .env.*.local
+
+# editors & OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# npm lockfiles (wir nutzen pnpm)
+package-lock.json
+**/package-lock.json
+"@ | Out-File -Encoding utf8 -Append .gitignore
